@@ -25,6 +25,7 @@ def download_images_with_longer_width(url, save_dir):
                 image = Image.open(io.BytesIO(image_response.content))
                 width, height = image.size
 
+                image_name = os.path.join(save_dir, f"image{i}.jpg")
                 if width > height:
                     with open(image_name, 'wb') as image_file:
                         image_file.write(image_response.content)
@@ -42,7 +43,7 @@ if __name__ == "__main__":
     relative_images_dir="~/Downloads/images"
     save_directory = os.path.expanduser(relative_images_dir)
 
-    webpage_url = "http://m.gettywallpapers.com/cool-anime-wallpapers/"
+    webpage_url = "http://wall.alphacoders.com/by_category.php?id=3&name=Anime+Wallpapers"
 
     download_images_with_longer_width(webpage_url, save_directory)
 

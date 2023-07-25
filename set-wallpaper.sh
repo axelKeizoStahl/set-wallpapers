@@ -1,6 +1,6 @@
 #!/bin/bash
 
-relative_path="~/images"
+relative_path="~/Downloads/images"
 
 backgrounds_dir="$(eval echo $relative_path)"
 
