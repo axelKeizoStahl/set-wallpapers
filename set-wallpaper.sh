@@ -1,8 +1,8 @@
 #!/bin/bash
 
-relative_path="~/Downloads/images"
+path="~/Downloads/images"
 
-backgrounds_dir="$(eval echo $relative_path)"
+backgrounds_dir="$(eval echo $path)"
 
 image_files=("$backgrounds_dir"/*.jpg "$backgrounds_dir"/*.jpeg "$backgrounds_dir"/*.png)
 
