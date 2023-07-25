@@ -8,5 +8,5 @@ image_files=("$backgrounds_dir"/*.jpg "$backgrounds_dir"/*.jpeg "$backgrounds_di
 
 selected_image="${image_files[RANDOM % ${#image_files[@]}]}"
 
-nitrogen --set-zoom-fill "$selected_image"
+feh --bg-scale "$selected_image"
 
