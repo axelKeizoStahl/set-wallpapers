@@ -8,7 +8,7 @@ replacing "your api key" with your actual key.
 After git cloning the repo you should make the script an executable
 `chmod +x set-wallpaper.sh`
 You also need to install feh, which is used to set the wallpaper
-There is a purity option that is set to 100 where 1 is on and 0 is off, nsfw and scetchy is off on purpose.
+There is a purity option that is set to 100 where 1 is on and 0 is off, nsfw is off on purpose.
 Then run it
 `./set-wallpaper.sh`
 Or put it in you rc files somewhere.
